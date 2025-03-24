@@ -1,0 +1,259 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b2838;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    background-color: #171a21;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Контейнер для карточек */
+.container {
+    display: flex; /* Flexbox для расположения карточек */
+    flex-wrap: wrap; /* Позволяет карточкам переноситься на новые строки */
+    justify-content: space-between; /* Равномерно распределяет карточки */
+    gap: 20px; /* Отступы между карточками */
+    margin: 20px;
+}
+
+/* Общий стиль для карточки */
+.game-card {
+    background-color: #2a475e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 30%; /* Размер карточки */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Изображение игры */
+.game-card img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+}
+
+/* При наведении на карточку */
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+/* Кнопка скачивания */
+.download-btn a {
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: #66c0f4;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Эффект при наведении на кнопку скачивания */
+.download-btn a:hover {
+    background-color: #549ac7;
+}
+
+/* Класс для карточки 1 (слева) */
+.game-card:nth-child(3n-2) {
+    order: 1; /* Это карточка 1, которая будет располагаться слева */
+}
+
+/* Класс для карточки 2 (по центру) */
+.game-card:nth-child(3n-1) {
+    order: 2; /* Это карточка 2, которая будет располагаться в центре */
+}
+
+/* Класс для карточки 3 (справа) */
+.game-card:nth-child(3n) {
+    order: 3; /* Это карточка 3, которая будет располагаться справа */
+}
+
+.game-card:nth-child(4n) {
+    order: 4; /* Это карточка 3, которая будет располагаться справа */
+}
+
+.game-card:nth-child(5n) {
+    order: 5; /* Это карточка 3, которая будет располагаться справа */
+}
+
+
+.game-card {
+    background-color: #2a475e;
+    margin: 15px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+.game-card h3 {
+    margin: 10px 0;
+}
+
+.game-card button {
+    background-color: #66c0f4;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.game-card button:hover {
+    background-color: #549ac7;
+}
+
+.game-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.game-info img {
+    width: 50%;
+    border-radius: 5px;
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #66c0f4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background-color: #549ac7;
+}
+
+.recommendations {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #66c0f4;
+}
+/* Кнопка скачивания */
+/* Кнопка скачивания (уменьшенная) */
+.download-btn a {
+    display: block;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 8px 16px; /* Уменьшены отступы (вверх/вниз и влево/вправ) */
+    background-color: #66c0f4;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 20px; /* Уменьшен размер шрифта */
+    width: auto; /* Ширина кнопки адаптируется под содержимое */
+    box-sizing: border-box;
+}
+
+/* Эффект при наведении на кнопку скачивания */
+.download-btn a:hover {
+    background-color: #549ac7;
+}
+/* Стиль для изображения игры */
+/* Стиль для изображения игры */
+/* Стиль для изображения игры */
+.game-image {
+    width: 100%; /* Обеспечиваем, что картинка будет масштабироваться по ширине контейнера */
+    max-width: 30%; /* Ограничиваем максимальный размер изображения */
+    height: auto; /* Сохраняем пропорции изображения */
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Описание игры */
+.game-info p {
+    font-size: 14px; /* Уменьшенный размер шрифта */
+    line-height: 1.4; /* Меньше расстояние между строками */
+    color: #ccc;
+    text-align: justify;
+}
+
+/* Кнопки Лайк и Дизлайк */
+.rating {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.like-btn, .dislike-btn {
+    background-color: #4caf50; /* Зеленый для лайка */
+    color: white;
+    border: none;
+    padding: 8px 15px; /* Уменьшены отступы */
+    font-size: 14px; /* Уменьшенный размер шрифта */
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.like-btn:hover, .dislike-btn:hover {
+    background-color: #45a049;
+}
+
+/* Дизлайк кнопка - красный */
+.dislike-btn {
+    background-color: #f44336;
+}
+
+.dislike-btn:hover {
+    background-color: #e53935;
+}
+
+/* Кнопка назад */
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #66c0f4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #549ac7;
+}
